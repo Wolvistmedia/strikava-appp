@@ -775,7 +775,7 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "elastic-siem-operations",
+    slug: "splunk-core-certified-user",
     title: "Splunk Core Certified User",
     category: "data",
     desc: "Build strong Splunk foundation: searching, fields, look-ups, alerts, reports, and dashboards. Entry-level certification for Enterprise and Cloud.",
@@ -792,7 +792,7 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "splunk-core-certified-user",
+    slug: "splunk-core-certified-power-user",
     title: "Splunk Core Certified Power User",
     category: "data",
     desc: "Master advanced Splunk skills: knowledge objects, data models, field aliases, calculated fields, macros, and Common Information Model normalization.",
@@ -810,7 +810,7 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "splunk-core-certified-power-user",
+    slug: "splunk-core-certified-advanced-power-user",
     title: "Splunk Core Certified Advanced Power User",
     category: "data",
     desc: "Deepen your Splunk expertise with complex search commands, advanced knowledge objects, and best practices for dashboards and forms to get the most out of your data.",
@@ -828,10 +828,10 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "splunk-core-certified-advanced-power-user",
+    slug: "splunk-cloud-certified-admin",
     title: "Splunk Cloud Certified Admin",
     category: "data",
-    desc: "Build competence in managing and configuring Splunk Cloud ΓÇö data inputs, forwarder configuration, data management, user accounts, monitoring, and problem isolation.",
+    desc: "Build competence in managing and configuring Splunk Cloud — data inputs, forwarder configuration, data management, user accounts, monitoring, and problem isolation.",
     duration: "40 Hrs",
     mode: "Live",
     level: "Intermediate",
@@ -849,7 +849,7 @@ export const programs: Program[] = [
     slug: "splunk-enterprise-certified-admin",
     title: "Splunk Enterprise Certified Admin",
     category: "data",
-    desc: "Develop expertise in daily Splunk Enterprise management ΓÇö license management, indexers, search heads, configuration, monitoring, and getting data into the Splunk platform.",
+    desc: "Develop expertise in daily Splunk Enterprise management — license management, indexers, search heads, configuration, monitoring, and getting data into the Splunk platform.",
     duration: "40 Hrs",
     mode: "Live",
     level: "Intermediate",
@@ -1361,7 +1361,7 @@ export const programs: Program[] = [
     slug: "kali-linux-ethical-hacking-fundamentals",
     title: "Kali Linux Ethical Hacking Fundamentals",
     category: "devops",
-    desc: "HComprehensive 12-module Kali Linux ethical hacking fundamentals program covering installation, commands, networking, scanning, vulnerability assessment, wireless testing, exploitation basics, and reporting.",
+    desc: "Comprehensive 12-module Kali Linux ethical hacking fundamentals program covering installation, commands, networking, scanning, vulnerability assessment, wireless testing, exploitation basics, and reporting.",
     duration: "40 Hrs",
     mode: "Live",
     level: "Intermediate",
@@ -2214,23 +2214,23 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "vmware-private-cloud-professional-roadmap",
+    slug: "bcs-business-analysis-architecture-roadmap",
     title: "BCS Business Analysis and Architecture Roadmap",
-    category: "cybersecurity",
-    desc: "Integrated 9-course BCS roadmap covering Business Analysis foundation and practice, enterprise and solution architecture, agile BA, information assurance architecture, business architecture, data management essentials, and IS project management.",
+    category: "project-management",
+    desc: "Integrated 9-course BCS roadmap covering Business Analysis foundation and practice, enterprise architecture, solution design, agile BA, information assurance, business architecture, data management, and IS project management.",
     duration: "40 Hrs",
     mode: "Live",
     level: "Intermediate",
     iconName: "Shield",
     syllabus: [
-      "VMware vSphere: Install, Configure, Manage [V8]",
-      "VMware vSphere: Optimize and Scale",
-      "VMware NSX-T Data Center: Install, Configure, Manage",
-      "VMware vRealize Automation: Install, Configure, Manage",
-      "VMware vSAN: Deploy and Manage",
-      "VMware Horizon: Deploy and Manage",
-      "VMware Cloud Foundation: Management and Operations",
-      "Advanced Troubleshooting for vSphere"
+      "▹ Business Analysis fundamentals and requirement elicitation",
+      "▹ Enterprise and solution architecture planning",
+      "▹ Agile business analysis and iterative delivery",
+      "▹ Information assurance and governance practices",
+      "▹ Business process modelling and stakeholder management",
+      "▹ Data management essentials for enterprise projects",
+      "▹ IS project lifecycle and quality assurance",
+      "▹ Role-based roadmap for business analyst and architect careers"
     ]
   }
 ];
