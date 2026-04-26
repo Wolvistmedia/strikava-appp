@@ -37,51 +37,92 @@ export default function SuccessStories() {
   ];
 
   return (
-    <div className="pt-24 pb-20 relative min-h-screen">
-      <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-accent/20 blur-[120px] pointer-events-none rounded-full" />
+    <div className="pt-20 sm:pt-24 pb-16 sm:pb-20 relative min-h-screen overflow-x-hidden">
+
+     
+      <div className="absolute top-1/4 left-0 w-[250px] sm:w-[300px] md:w-[400px] h-[250px] sm:h-[300px] md:h-[400px] bg-accent/20 blur-[100px] sm:blur-[120px] pointer-events-none rounded-full" />
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-extrabold mb-6">Success <span className="text-gradient">Stories</span></h1>
-          <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
+      
+      <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        {/* Header */}
+        <div className="text-center mb-12 sm:mb-16">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6">
+            Success <span className="text-gradient">Stories</span>
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto">
             Read how professionals transformed their careers and achieved significant salary growth through our programs.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {stories.map((story, idx) => (
-            <GlassCard key={idx} delay={idx * 0.15} className="flex flex-col h-full relative">
-              <Quote className="absolute top-6 right-6 text-white/10 w-16 h-16" />
+            <GlassCard
+              key={idx}
+              delay={idx * 0.15}
+              className="flex flex-col h-full relative w-full overflow-hidden p-5 sm:p-6"
+            >
+              {/* Quote icon */}
+              <Quote className="absolute top-4 sm:top-6 right-4 sm:right-6 text-white/10 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16" />
               
-              <div className="mb-6 relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-2">{story.title}</h3>
-                <h4 className="text-lg font-semibold text-primary">{story.name}</h4>
-                <p className="text-foreground/70 text-sm">{story.role}</p>
+              {/* Content */}
+              <div className="mb-5 sm:mb-6 relative z-10">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2">
+                  {story.title}
+                </h3>
+                <h4 className="text-base sm:text-lg font-semibold text-primary">
+                  {story.name}
+                </h4>
+                <p className="text-xs sm:text-sm text-foreground/70">
+                  {story.role}
+                </p>
               </div>
               
-              <div className="flex flex-wrap gap-2 mb-6 relative z-10">
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2 mb-5 sm:mb-6 relative z-10">
                 {story.tags.map((tag, i) => (
-                  <span key={i} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-white">
+                  <span
+                    key={i}
+                    className="px-2 sm:px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] sm:text-xs text-white"
+                  >
                     {tag}
                   </span>
                 ))}
               </div>
               
-              <div className="space-y-3 mb-8 flex-grow relative z-10 border-l-2 border-primary/30 pl-4">
+              {/* Before/After */}
+              <div className="space-y-3 mb-6 sm:mb-8 flex-grow relative z-10 border-l-2 border-primary/30 pl-3 sm:pl-4">
                 <div>
-                  <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">Before</p>
-                  <p className="text-white font-medium">{story.before}</p>
+                  <p className="text-[10px] sm:text-xs text-foreground/50 uppercase tracking-wider mb-1">
+                    Before
+                  </p>
+                  <p className="text-white text-sm sm:text-base font-medium">
+                    {story.before}
+                  </p>
                 </div>
                 <div>
-                  <p className="text-xs text-foreground/50 uppercase tracking-wider mb-1">After</p>
-                  <p className="text-primary font-bold">{story.after}</p>
+                  <p className="text-[10px] sm:text-xs text-foreground/50 uppercase tracking-wider mb-1">
+                    After
+                  </p>
+                  <p className="text-primary text-sm sm:text-base font-bold">
+                    {story.after}
+                  </p>
                 </div>
               </div>
               
-              <div className="pt-6 border-t border-white/10 mt-auto relative z-10">
-                <p className="text-sm text-foreground/60 mb-3">Course Taken:</p>
-                <Link href={story.link} className="group flex items-center justify-between hover:bg-white/5 p-3 rounded-lg transition-colors border border-transparent hover:border-white/10">
-                  <span className="text-white font-medium text-sm">{story.course}</span>
+              {/* CTA */}
+              <div className="pt-4 sm:pt-6 border-t border-white/10 mt-auto relative z-10">
+                <p className="text-xs sm:text-sm text-foreground/60 mb-2 sm:mb-3">
+                  Course Taken:
+                </p>
+                <Link
+                  href={story.link}
+                  className="group flex items-center justify-between hover:bg-white/5 p-2 sm:p-3 rounded-lg transition-colors border border-transparent hover:border-white/10"
+                >
+                  <span className="text-white font-medium text-xs sm:text-sm">
+                    {story.course}
+                  </span>
                   <ArrowRight className="text-primary w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>

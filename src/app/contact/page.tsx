@@ -60,22 +60,35 @@ export default function Contact() {
           <div className="lg:w-2/3">
             <GlassCard delay={0.2} className="p-8 md:p-10 relative overflow-hidden">
               <h3 className="text-2xl font-bold text-white mb-6">Send us a message</h3>
-              
+
               {state?.success ? (
-                <div className="absolute inset-0 bg-background/95 backdrop-blur-md z-10 flex flex-col items-center justify-center p-8 text-center animate-in fade-in zoom-in duration-500">
-                  <div className="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mb-6">
-                    <CheckCircle2 className="text-green-400 w-10 h-10" />
+                <div className="absolute inset-0 bg-black/40 backdrop-blur-sm z-10 flex flex-col items-center justify-center p-6 text-center animate-in fade-in zoom-in duration-500">
+
+                  <div className="w-20 h-20 bg-green-500/45 rounded-full flex items-center justify-center mb-6">
+                    <CheckCircle2 className="text-green-500 w-10 h-10" />
                   </div>
-                  <h3 className="text-2xl font-bold text-white mb-4">Request Received!</h3>
-                  <p className="text-foreground/80 mb-8 max-w-md">{state.message}</p>
-                  <AnimatedButton onClick={() => window.location.reload()} variant="outline">
+
+                  <h3 className="text-2xl font-bold text-white  mb-4">
+                    Request Received!
+                  </h3>
+
+                  <p className="text-white/80 font-bold text-base sm:text-xl md:text-xl lg:text-xl mb-8 max-w-md">
+                    {state.message}
+                  </p>
+
+                  <AnimatedButton
+                    onClick={() => window.location.reload()}
+                    variant="outline"
+                    className="bg-primary text-primary-foreground font-semibold rounded-full hover:bg-primary/90 transition-transform hover:scale-105 active:scale-95"
+                  >
                     Send Another Message
                   </AnimatedButton>
+
                 </div>
               ) : null}
 
               <form action={formAction} className="space-y-6">
-                
+
                 {state?.error ? (
                   <div className="p-4 bg-red-500/10 border border-red-500/50 rounded-lg flex items-start">
                     <AlertCircle className="text-red-400 w-5 h-5 mr-3 flex-shrink-0 mt-0.5" />
@@ -86,25 +99,25 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-foreground/80">Full Name *</label>
-                    <input 
-                      type="text" 
+                    <input
+                      type="text"
                       id="name"
                       name="name"
                       required
                       disabled={isPending}
-                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
+                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-black font-bold focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
                       placeholder="John Doe"
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-foreground/80">Email Address *</label>
-                    <input 
-                      type="email" 
+                    <input
+                      type="email"
                       id="email"
                       name="email"
                       required
                       disabled={isPending}
-                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
+                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-black font-bold focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -112,22 +125,23 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-medium text-foreground/80">Phone Number</label>
-                    <input 
-                      type="tel" 
+                    <input
+                      type="tel"
                       id="phone"
                       name="phone"
                       disabled={isPending}
-                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
+                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-black font-bold focus:outline-none focus:border-primary transition-colors disabled:opacity-50"
                       placeholder="+91 98765 43210"
                     />
                   </div>
+
                   <div className="space-y-2">
                     <label htmlFor="program" className="text-sm font-medium text-foreground/80">Program of Interest</label>
-                    <select 
+                    <select
                       id="program"
                       name="program"
                       disabled={isPending}
-                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors appearance-none disabled:opacity-50"
+                      className="w-full bg-background/50 border border-border rounded-lg px-4 py-3   text-black font-bold focus:outline-none focus:border-primary transition-colors appearance-none disabled:opacity-50"
                     >
                       <option value="">Select a program</option>
                       <option value="cloud">Cloud Security Roadmap</option>
@@ -136,22 +150,23 @@ export default function Contact() {
                       <option value="devops">DevOps Engineering</option>
                     </select>
                   </div>
+                  
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-foreground/80">Message / Career Goals *</label>
-                  <textarea 
+                  <textarea
                     id="message"
                     name="message"
                     required
                     rows={4}
                     disabled={isPending}
-                    className="w-full bg-background/50 border border-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none disabled:opacity-50"
+                    className="w-full bg-background/50 border border-border rounded-lg px-4 py-3  text-black font-medium text-xl focus:outline-none focus:border-primary transition-colors resize-none disabled:opacity-50"
                     placeholder="Tell us about your current role and what you want to achieve..."
                   ></textarea>
                 </div>
-                
-                <AnimatedButton 
-                  type="submit" 
+
+                <AnimatedButton
+                  type="submit"
                   disabled={isPending}
                   className="w-full py-4 text-lg disabled:opacity-70 disabled:cursor-not-allowed"
                 >
