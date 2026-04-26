@@ -5936,7 +5936,7 @@ export const programs: Program[] = [
     ]
   },
   {
-    slug: "bcs-business-analysis-roadmap",
+    slug: "enterprise-cloud-security-professional-roadmap",
     title: "Enterprise Cloud and Security Professional Roadmap",
     category: "cybersecurity",
     desc: "Show all selected 15 courses in one page: PL-300, AZ-104, AI-102, AWS Cloud Practitioner, DP-600, AZ-305, CISSP, SC-200, ITIL 4 Foundation, CCNA v2.1, SC-300, AZ-500, AZ-400, DW-101, and AZ-204.",
