@@ -33,18 +33,9 @@ export function Navbar() {
         }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="rounded-2xl bg-white/10 border border-white/10 p-2 shadow-[0_10px_30px_rgba(255,255,255,0.08)]">
-            <img
-              src="/strikava-logo-transparent.png"
-              alt="Strikava logo"
-              className="h-12 w-auto object-contain"
-            />
-          </div>
-          <div className="text-2xl font-bold tracking-tighter">
-            <span className="text-white">Strik</span>
-            <span className="text-primary">ava</span>
-          </div>
+        <Link href="/" className="text-2xl font-bold tracking-tighter">
+          <span className="text-white">Strik</span>
+          <span className="text-primary">ava</span>
         </Link>
 
         {/* Desktop Nav */}
