@@ -34,9 +34,16 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter">
-          <span className="text-white">Strik</span>
-          <span className="text-primary">ava</span>
+        <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/strikava-logo.png"
+            alt="Strikava logo"
+            className="h-12 w-auto object-contain"
+          />
+          <div className="text-2xl font-bold tracking-tighter">
+            <span className="text-white">Strik</span>
+            <span className="text-primary">ava</span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
