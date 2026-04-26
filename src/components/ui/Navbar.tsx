@@ -36,7 +36,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/strikava-logo.png"
+            src="/strikava-logo-transparent.png"
             alt="Strikava logo"
             className="h-12 w-auto object-contain"
           />
