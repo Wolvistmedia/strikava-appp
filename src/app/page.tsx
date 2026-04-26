@@ -33,18 +33,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute 
-  bottom-1 sm:bottom-1 md:bottom-1 
-  left-1/2.5 -translate-x-1/2 
-  flex flex-col items-center 
-  animate-bounce text-foreground/50"
-        >
-          <span className="text-xs sm:text-sm md:text-base text-gradient ">
-            Scroll Down
-          </span>
-          <ArrowRight className="rotate-90 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-        </div>
-
       </section>
 
       {/* Stats Section */}
