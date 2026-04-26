@@ -42,12 +42,19 @@ export default function Contact() {
     setAlert(null);
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://strikava-backend.onrender.com/inquiry", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          mobile: formData.phone,     
+          course: formData.program,   
+          message: formData.message,
+          type: "contact",            
+        })
       });
 
       const result = await response.json();
