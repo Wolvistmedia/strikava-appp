@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,10 +35,21 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter">
-          <span className="text-white">Strik</span>
-          <span className="text-primary">ava</span>
-        </Link>
+        <Link href="/" className="flex items-center gap-3">
+            <Image
+              src="/logo.ico"
+              alt="Strikava Logo"
+              width={50}
+              height={70}
+              className="object-contain"
+              priority
+            />
+
+            <span className="text-2xl font-bold tracking-tighter">
+              <span className="text-white">Strik</span>
+              <span className="text-primary">ava</span>
+            </span>
+          </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">

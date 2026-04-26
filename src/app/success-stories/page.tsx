@@ -33,6 +33,139 @@ export default function SuccessStories() {
       after: "Azure Administrator, 9.6 LPA",
       course: "Azure AZ-104",
       link: "/programs/azure-az104"
+    },
+    // // card-4
+    // {
+    //   title: "NOC Analyst to SOC Analyst",
+    //   name: "Farhan K.",
+    //   role: "SOC Analyst | Hyderabad",
+    //   tags: ["SIEM", "Splunk", "Incident Response"],
+    //   before: "NOC Analyst, 4.9 LPA",
+    //   after: "SOC Analyst, 10.7 LPA",
+    //   course: "Splunk SOC Analyst",
+    //   link: "/programs/splunk-soc-analyst"
+    // },
+    // card-5
+    {
+      title: "Support Analyst to SIEM Engineer",
+      name: "Vikram D.",
+      role: "SIEM Engineer | Gurugram",
+      tags: ["Sentinel", "KQL", "SOC"],
+      before: "Support Analyst, 5.1 LPA",
+      after: "SIEM Engineer, 10.9 LPA",
+      course: "AWS Security Specialty",
+      link: "/programs/show-all-courses-roadmap"
+    },
+    // // card-6
+    // {
+    //   title: "SQL Developer to Data Engineer",
+    //   name: "Nitin P.",
+    //   role: "Data Engineer | Mumbai",
+    //   tags: ["SQL", "Pipelines", "Cloud Data"],
+    //   before: "SQL Developer, 5.8 LPA",
+    //   after: "Data Engineer, 12.1 LPA",
+    //   course: "Sentinel SIEM Cloud Security",
+    //   link: "/programs/sentinel-siem-cloud-security"
+    // },
+    // // card-7
+    // {
+    //   title: "Developer to Cloud Solutions Architect",
+    //   name: "Karan B.",
+    //   role: "Cloud Solutions Architect | Bengaluru",
+    //   tags: ["Architecture", "AWS Pro", "Design"],
+    //   before: "Developer, 7.1 LPA",
+    //   after: "Cloud Solutions Architect, 16.0 LPA",
+    //   course: "Cloud Data Security Certification Roadmap",
+    //   link: "/programs/cloud-data-security-certification-roadmap"
+    // },
+    // card-8
+    {
+      title: "Support Executive to Linux Administrator",
+      name: "Saurabh L.",
+      role: "Linux Administrator | Indore",
+      tags: ["Linux", "Server Ops", "Shell"],
+      before: "Support Executive, 4.5 LPA",
+      after: "Linux Administrator, 8.9 LPA",
+      course: "Network Engineering Professional Track",
+      link: "/programs/network-engineering-professional-track"
+    },
+    // // card-9
+    // {
+    //   title: "Network Admin to Cloud Network Engineer",
+    //   name: "Pratik J.",
+    //   role: "Cloud Network Engineer | Ahmedabad",
+    //   tags: ["VPC", "Routing", "Hybrid Cloud"],
+    //   before: "Network Admin, 6.0 LPA",
+    //   after: "Cloud Network Engineer, 12.1 LPA",
+    //   course: "Kubernetes Administrator CKA",
+    //   link: "/programs/kubernetes-administrator-cka"
+    // },
+    // card 10
+    {
+      title: "Build Engineer to Platform Engineer",
+      name: "Harshit V.",
+      role: "Platform Engineer | Bengaluru",
+      tags: ["CKA", "Kubernetes", "Containers"],
+      before: "Build Engineer, 6.1 LPA",
+      after: "Platform Engineer, 13.2 LPA",
+      course: "Azure AZ-500",
+      link: "/programs/azure-az500"
+    },
+    // card 11
+   {
+      title: "Coordinator to Project Lead",
+      name: "Neeraj P.",
+      role: "Project Lead | Jaipur",
+      tags: ["PMI", "Planning", "Leadership"],
+      before: "Coordinator, 5.6 LPA",
+      after: "Project Lead, 10.6 LPA",
+      course: "IT and Security Governance Certifications Roadmap",
+      link: "/programs/governance-certifications-roadmap"
+    },
+
+    // card 12
+    {
+      title: "IT Support to ITSM Specialist",
+      name: "Ritika S.",
+      role: "ITSM Specialist | Kochi",
+      tags: ["ITIL", "Service Ops", "Process"],
+      before: "IT Support, 4.9 LPA",
+      after: "ITSM Specialist, 9.2 LPA",
+      course: "IT and Security Governance Certifications Roadmap",
+      link: "/programs/governance-certifications-roadmap"
+    },
+    // card 13
+    {
+      title: "Audit Associate to GRC Consultant",
+      name: "Deepak A.",
+      role: "GRC Consultant | Kolkata",
+      tags: ["GRC", "Audit", "Risk"],
+      before: "Audit Associate, 5.2 LPA",
+      after: "GRC Consultant, 10.1 LPA",
+      course: "Linux Certifications Roadmap",
+      link: "/programs/linux-certifications-roadmap"
+    },
+    // card-14
+    {
+      title: "Infra Engineer to Azure Security Engineer",
+      name: "Pooja N.",
+      role: "Azure Security Engineer | Delhi",
+      tags: ["AZ-500", "Defender", "Identity"],
+      before: "Infra Engineer, 6.4 LPA",
+      after: "Azure Security Engineer, 13.6 LPA",
+      course: "Azure AZ-500",
+      link: "/programs/azure-az500"
+    },
+    // Card 15
+    {
+      title: "System Engineer to Cloud Security Engineer",
+      name: "Megha T.",
+      role: "Cloud Security Engineer | Chennai",
+      tags: ["AWS Security", "IAM", "Compliance"],
+      before: "System Engineer, 6.2 LPA",
+      after: "Cloud Security Engineer, 13.7 LPA",
+      course: "IT and Security Governance Certifications Roadmap",
+      link: "/programs/governance-certifications-roadmap"
     }
   ];
 
