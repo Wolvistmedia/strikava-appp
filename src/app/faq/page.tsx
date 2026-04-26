@@ -37,7 +37,7 @@ export default function FAQ() {
         <div className="text-center mb-16">
           <h1 className="text-5xl font-extrabold mb-6">Frequently Asked <span className="text-gradient">Questions</span></h1>
           <p className="text-xl text-foreground/80 max-w-2xl mx-auto">
-            Got questions? We've got answers. If you need more details, feel free to talk to an advisor.
+            Got questions? We&#39;ve got answers. If you need more details, feel free to talk to an advisor.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export default function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="px-6 pb-6 pt-0 text-foreground/70 border-t border-white/5 mt-2 pt-4">
+                    <div className="px-6 pb-6 text-foreground/70 border-t border-white/5 mt-2 pt-4">
                       {faq.answer}
                     </div>
                   </motion.div>

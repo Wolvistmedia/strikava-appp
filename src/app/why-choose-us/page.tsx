@@ -1,5 +1,5 @@
 import { GlassCard } from "@/components/ui/GlassCard";
-import { CheckCircle2, TrendingUp, Presentation, Lightbulb, UserCheck, Calendar, Users, Star, Award } from "lucide-react";
+import { Users, Star, Award } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 
 export default function WhyChooseUs() {
@@ -27,7 +27,7 @@ export default function WhyChooseUs() {
   return (
     <div className="pt-24 pb-20 relative">
       <div className="container mx-auto px-6 relative z-10">
-        
+
         <div className="text-center mb-16 max-w-4xl mx-auto">
           <h1 className="text-5xl font-extrabold mb-6">Why <span className="text-gradient">Choose Us</span></h1>
           <p className="text-xl text-foreground/80 leading-relaxed">
@@ -36,12 +36,30 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {/* Stats Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-16 sm:mb-20">
           {stats.map((stat, idx) => (
-            <GlassCard key={idx} delay={idx * 0.1} className="p-8 flex flex-col items-center text-center">
-              <div className="mb-4 p-4 rounded-full bg-white/5 border border-white/10">{stat.icon}</div>
-              <h3 className="text-4xl font-bold text-white mb-2">{stat.value}</h3>
-              <p className="text-foreground/70 uppercase tracking-widest text-sm font-semibold">{stat.label}</p>
+            <GlassCard
+              key={idx}
+              delay={idx * 0.1}
+              className="p-6 sm:p-8 flex flex-col items-center text-center w-full overflow-hidden"
+            >
+              {/* ✅ Icon */}
+              <div className="mb-3  sm:mb-4 p-5 sm:p-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
+                <div className="w-6 h-6 sm:w-8 sm:h-8">
+                  {stat.icon}
+                </div>
+              </div>
+
+              {/* ✅ Value */}
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1 sm:mb-2">
+                {stat.value}
+              </h3>
+
+              {/* ✅ Label */}
+              <p className="text-xs sm:text-sm text-foreground/70 uppercase tracking-wider sm:tracking-widest font-semibold">
+                {stat.label}
+              </p>
             </GlassCard>
           ))}
         </div>
