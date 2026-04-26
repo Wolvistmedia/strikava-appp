@@ -49,3 +49,25 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
   }
 }
+
+@keyframes particleFloat {
+  from {
+    transform: translateY(0px) scale(1);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateY(-18px) scale(1.4);
+    opacity: 0.75;
+  }
+}
+
+@keyframes particleFloat {
+  from {
+    transform: translateY(0px) scale(1);
+    opacity: 0.35;
+  }
+  to {
+    transform: translateY(-18px) scale(1.4);
+    opacity: 0.75;
+  }
+}

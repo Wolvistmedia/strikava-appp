@@ -2,27 +2,27 @@ import { ParticleBackground } from "@/components/ui/ParticleBackground";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { GlassCard } from "@/components/ui/GlassCard";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Users, Star, Clock } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden ">
         <ParticleBackground />
-        
+
         <div className="container relative z-10 mx-auto px-6 text-center">
           <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-md text-primary font-medium text-sm animate-pulse">
             Enterprise IT Training Company
           </div>
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 max-w-4xl mx-auto leading-tight">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
             Built for Professionals Who Need <br className="hidden md:block" />
             <span className="text-gradient">Real Technical Depth</span>
           </h1>
           <p className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-2xl mx-auto leading-relaxed">
             We deliver industry-focused corporate training programs in Cybersecurity, Cloud, DevOps, and Data Engineering to help teams upskill and perform better.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <AnimatedButton href="/programs" variant="primary">
               Explore Training Programs
@@ -32,32 +32,27 @@ export default function Home() {
             </AnimatedButton>
           </div>
         </div>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce text-foreground/50">
-          <span className="text-sm mb-2">Scroll Down</span>
-          <ArrowRight className="rotate-90" size={20} />
-        </div>
+
       </section>
 
       {/* Stats Section */}
       <section className="py-20 relative z-20 -mt-10">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <GlassCard delay={0.1} className="text-center p-10 flex flex-col items-center justify-center">
-              <Users className="text-primary mb-4 w-12 h-12" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8  items-center ">
+            <GlassCard delay={0.1} className=" p-10 flex flex-col items-center justify-center">
+             
               <h3 className="text-5xl font-bold text-white mb-2">34+</h3>
               <p className="text-foreground/70 uppercase tracking-widest text-sm font-semibold">Students</p>
             </GlassCard>
-            
+
             <GlassCard delay={0.2} className="text-center p-10 flex flex-col items-center justify-center">
-              <Star className="text-accent mb-4 w-12 h-12" />
+              
               <h3 className="text-5xl font-bold text-white mb-2">99%</h3>
               <p className="text-foreground/70 uppercase tracking-widest text-sm font-semibold">Rating</p>
             </GlassCard>
-            
+
             <GlassCard delay={0.3} className="text-center p-10 flex flex-col items-center justify-center">
-              <Clock className="text-blue-400 mb-4 w-12 h-12" />
+          
               <h3 className="text-5xl font-bold text-white mb-2">184+</h3>
               <p className="text-foreground/70 uppercase tracking-widest text-sm font-semibold">Hours Delivered</p>
             </GlassCard>
@@ -168,7 +163,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4">Success Stories</h2>
             <p className="text-xl text-foreground/70">From skill-gap discovery to interview readiness.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <GlassCard delay={0.1} className="p-8">
               <h3 className="text-xl font-bold text-white mb-2">Support Engineer to AWS Architect</h3>
@@ -270,7 +265,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white leading-tight">
             A clearer training model creates better execution confidence, stronger mentorship access, and more ready outcomes for working professionals.
           </h2>
-          
+
           <div className="flex flex-col md:flex-row justify-center gap-8 my-12 text-left">
             <div className="flex-1">
               <h3 className="text-xl font-bold text-primary mb-2">Role-focused</h3>

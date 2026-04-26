@@ -2,7 +2,7 @@ import { getProgramBySlug, programs } from "@/lib/data";
 import { notFound } from "next/navigation";
 import { AnimatedButton } from "@/components/ui/AnimatedButton";
 import { GlassCard } from "@/components/ui/GlassCard";
-import { CheckCircle2, Calendar, Clock, Award, ChevronRight } from "lucide-react";
+import { CheckCircle2, Calendar, Clock, Award } from "lucide-react";
 import Link from "next/link";
 
 import { Metadata } from "next";
@@ -80,7 +80,7 @@ export default async function ProgramDetail({ params }: { params: Promise<{ slug
                       <p className="text-foreground/70 ml-11">{tier.desc}</p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-11">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ml-1 sm:ml-11 md:ml-11 lg:ml-11">
                       {tier.modules.map((mod, mIdx) => (
                         <GlassCard key={mIdx} delay={0.1 * mIdx} className="p-6 border-l-4 border-l-accent hover:border-l-primary transition-colors">
                           <h5 className="text-xl font-bold text-white mb-2">{mod.title}</h5>
