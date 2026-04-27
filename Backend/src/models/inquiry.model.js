@@ -5,14 +5,28 @@ const inquirySchema = new mongoose.Schema(
     name: {
       type: String,
       required: true,
+      trim: true,
     },
-    email: String,
+    email: {
+      type: String,
+      required: true,
+      trim: true,
+      lowercase: true,
+    },
     mobile: {
       type: String,
       required: true,
+      match: [/^[0-9]{10}$/, "Mobile must be 10 digits"],
     },
-    message: String,
-    course: String,
+    course: {
+      type: String,
+      enum: ["cloud", "aws", "cyber", "devops"],
+    },
+    message: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     type: {
       type: String,
       enum: ["contact", "consultation"],
